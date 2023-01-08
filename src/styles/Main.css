@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css?family=Prosto+one&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sevillana&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  height: 15vh;
+  margin: 1rem;
+}
+
+.left-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-nav img {
+  border-radius: 50%;
+  height: 100px;
+}
+
+.left-nav h2 {
+  font-family: Prosto one;
+  font-size: 2.5rem;
+  font-weight: 100;
+  padding: 0px 10px;
+  color: skyblue;
+}
+
+.right-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 100px;
+}
+
+.right-nav h3 {
+  font-family: Prosto one;
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding: 0px 10px;
+  color: #ee6c8a;
+}
+
+.user {
+  font-family: Sevillana;
+}
+
+.button {
+  height: 40px;
+  width: 80px;
+  cursor: pointer;
+  font-family: Prosto one;
+  font-size: medium;
+  margin: 3px 0;
+  color: skyblue;
+  border: 0;
+  outline: 0;
+}
+
+.button:hover {
+  scale: 0.95;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin: 0 80px;
+  height: 70vh;
+}
+
+section div {
+  margin-top: 100px;
+}
+
+section h2 {
+  font-family: Prosto one;
+  font-size: 3rem;
+  font-weight: 200;
+  max-width: 450px;
+  text-align: center;
+  color: #ee6c8a;
+}
+
+section p {
+  font-family: Sevillana;
+  font-size: 3rem;
+  font-weight: 200;
+  text-align: center;
+  background-color: #eeecec;
+  color: skyblue;
+  width: 500px;
+  border-radius: 10px;
+  margin: 40px 0;
+}
+section img {
+  height: 400px;
+  align-self: center;
+  border-radius: 10px;
+}
+
+aside h2 {
+  font-family: Prosto one;
+  font-size: 4rem;
+  font-weight: 200;
+  text-align: center;
+  margin: 5rem 3rem;
+  color: #ee6c8a;
+}
+
+.majors {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  place-items: center;
+}
+
+.majors div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid skyblue;
+  width: 400px;
+  height: 200px;
+  margin: 10px 0;
+}
+
+.majors h3 {
+  font-family: Sevillina;
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-top: 7px;
+}
+
+.majors img {
+  height: 100px;
+  margin-right: 2rem;
+}
+
+main h3 {
+  text-align: center;
+  margin: 2rem;
+}
+
+.real {
+  font-family: Sevillana;
+  font-size: 2rem;
+  font-weight: 200;
+  text-decoration: none;
+  color: #ee6c8a;
+}
+
+footer {
+  background-color: skyblue;
+  color: white;
+  height: fit-content;
+}
+
+footer h3 {
+  padding: 2rem 0;
+  font-family: Pronto one;
+  font-size: 2rem;
+}
+
+footer p {
+  margin: 0 100px;
+  text-align: center;
+}
+
+.copy {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 70vh;
+  }
+
+  .right-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25px;
+    width: 100%;
+  }
+
+  .button {
+    margin-top: -25px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -100px;
+  }
+
+  section h2 {
+    max-width: 300px;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  section p {
+    width: 300px;
+    font-size: 2rem;
+  }
+
+  aside h2 {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+
+  .majors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  footer {
+    height: fit-content;
+  }
+
+  footer h3 {
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+  }
+
+  footer p {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .copy {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+  }
+
+  section {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
